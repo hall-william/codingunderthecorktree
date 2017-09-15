@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Home</title>
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<ul class="w3-navbar">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gaming.html">Gaming</a></li>
+				<li><a href="javascript:void(0)">Programming</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- Slide Show -->
+		<section>
+			<img class="mySlides" src="images/code.jpg" style="width:100%">
+			<img class="mySlides" src="images/binary-code.jpg" style="width:100%">
+			<img class="mySlides" src="images/xbox-controller.jpg" style="width:100%">
+		</section>
+		<script type="text/javascript">
+		// Automate Slideshow
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}
+		    x[myIndex-1].style.display = "block";
+		    setTimeout(carousel, 3000);
+		}
+		</script>
+	</body>
+</html>

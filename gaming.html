@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<body style="background-color:.w3-black">
+		<!-- Navigation -->
+		<nav>
+			<ul class="w3-navbar">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gaming.html">Gaming</a></li>
+				<li><a href="javascript:void(0)">Programming</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- Contact Information -->
+		<p align="center">
+			<iframe src="https://player.twitch.tv/?channel=snipersgethead3" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620" align="middle"></iframe><a href="https://www.twitch.tv/snipersgethead3?tt_medium=live_embed&tt_content=text_link"  style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;">Watch live video from SnipersGetHead3 on www.twitch.tv</a>
+		</p>
+		<p align="center">
+			<iframe src="https://www.twitch.tv/snipersgethead3/chat?popout=" frameborder="0" scrolling="no" height="500" width="620"></iframe>
+		</p>
+		<!-- Slide Show -->
+		<section>
+			<img class="mySlides" src="images/code.jpg" style="width:100%">
+			<img class="mySlides" src="images/binary-code.jpg" style="width:100%">
+			<img class="mySlides" src="images/xbox-controller.jpg" style="width:100%">
+		</section>
+		<script type="text/javascript">
+		// Automate Slideshow
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}
+		    x[myIndex-1].style.display = "block";
+		    setTimeout(carousel, 3000);
+		}
+		</script>
+	</body>
+</html>
